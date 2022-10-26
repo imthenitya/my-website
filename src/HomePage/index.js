@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import signature from '../signature.png'
 import picture from '../picture.png'
 import email from '../email.svg'
@@ -6,6 +6,20 @@ import linkedin from '../linkedin.svg'
 import './homepage.css'
 const HomePage=()=>{
 
+    useEffect(()=>{
+        console.log(navigator.geolocation)
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          }
+          else{
+            return false
+          }
+    },[])
+
+ const showPosition=(position)=>{
+    console.log(position.coords.latitude)
+    console.log(position.coords.longitude)
+ }
     return(
         <div className='container'>
             <div className='row'>
