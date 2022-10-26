@@ -1,0 +1,35 @@
+.signature{
+    margin:10px;
+    text-align: left;
+}
+button{
+    margin: 10px;
+    background-color: #e3fff8;
+    color:#332e2e;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 2px #332e2e;;
+}
+button:hover{
+    background-color: #332e2e;
+    color:#e3fff8;
+}
+.hello{
+    font-size:80px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+}
+.description{
+    font-size:18px;
+    text-align: left;
+}
+.picture{
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+}
+a{
+    text-decoration:none;
+    color:#332e2e
+}
